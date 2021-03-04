@@ -27,5 +27,5 @@ public class TAbleClient extends AppCompatActivity {
 
         list = clientDataDao.GetAll();
     }
-
+//cgoj;kvhjhjk;vhjkkgvhj
 }
