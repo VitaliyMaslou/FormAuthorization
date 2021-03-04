@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/design_default_color_secondary_variant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/Linearl"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/InLog"
+            android:hint="Логин"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/InPass"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Пароль"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InLog" />
+
+        <EditText
+            android:id="@+id/InFirstname"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Имя"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="240dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InRole"/>
+
+        <EditText
+            android:id="@+id/InSeconname"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Фамилия"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="305dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InFirstname"/>
+
+        <EditText
+            android:id="@+id/InMiddlename"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Отчество"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="379dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InSeconname"/>
+
+        <EditText
+            android:id="@+id/InPost"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Почта"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="453dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InMiddlename"
+            />
+
+        <EditText
+            android:id="@+id/InTelephon"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Телефон"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="518dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InPost"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linearl">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/design_default_color_secondary_variant"
+            android:onClick="On1"
+            android:text="Отмена"
+            app:backgroundTint="#8BC34A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CPassIn" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/design_default_color_secondary_variant"
+            android:onClick="On2"
+            android:text="Регистрация"
+            app:backgroundTint="#4CAF50"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="280dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+include ':avtorizationwindow'
+include ':database'
+include ':administration'
+include ':myapplication'
+include ':app'
+rootProject.name = "FormAuthorization"
