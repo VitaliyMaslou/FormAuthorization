@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         if(!CheckPassword(clientData, password))
             return;
 
-        Intent intent = new Intent(MainActivity.this, Registration.class);
+        Intent intent = new Intent(MainActivity.this, TAbleClient.class);
         startActivity(intent);
     }
 
