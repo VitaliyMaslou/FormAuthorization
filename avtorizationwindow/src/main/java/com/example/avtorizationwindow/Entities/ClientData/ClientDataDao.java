@@ -15,6 +15,9 @@ public interface ClientDataDao {
     @Query("Select * from ClientData Where Login = :Login")
     ClientData GetByLogin(String Login);
 
+    @Query("Delete from ClientData")
+    void deleteAll();
+
     @Insert
     void Insert(ClientData clientData);
 
@@ -23,4 +26,6 @@ public interface ClientDataDao {
 
     @Delete
     void Delete(ClientData clientData);
+
+
 }

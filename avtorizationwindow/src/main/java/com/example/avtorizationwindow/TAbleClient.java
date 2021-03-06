@@ -2,6 +2,7 @@ package com.example.avtorizationwindow;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TableLayout;
@@ -74,6 +75,13 @@ public class TAbleClient extends AppCompatActivity {
     public void On3(View view)
     {
         this.finish();
+    }
+
+    public void On5(View view)
+    {
+        Intent intent = new Intent(TAbleClient.this, Registration.class);
+        intent.putExtra("ROLE", "Администратор");
+        startActivity(intent);
     }
 
 }

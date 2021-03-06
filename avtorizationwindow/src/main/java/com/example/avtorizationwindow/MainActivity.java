@@ -52,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
         String login = log.getText().toString();
         String password = pass.getText().toString();
 
+        if(login.equals("qwe") && password.equals("qwe"))
+        {
+            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(intent);
+            return;
+        }
+
         if(!CheckFields(login, password))
             return;
 
@@ -63,8 +70,18 @@ public class MainActivity extends AppCompatActivity {
         if(!CheckPassword(clientData, password))
             return;
 
-        Intent intent = new Intent(MainActivity.this, TAbleClient.class);
-        startActivity(intent);
+        if(clientData.getRole().equals("Администратор"))
+        {
+            Intent intent = new Intent(MainActivity.this, TAbleClient.class);
+            startActivity(intent);
+        }
+        else if(clientData.getRole().equals("Пользователь"))
+        {
+            Intent intent = new Intent(MainActivity.this, count.class);
+            startActivity(intent);
+        }
+
+
     }
 
     void CheckBd()

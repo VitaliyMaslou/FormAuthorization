@@ -68,7 +68,7 @@
             android:layout_marginTop="100dp"
             android:background="@color/design_default_color_secondary_variant"
             android:onClick="On2"
-            android:text="Автроризоваться"
+            android:text="Авторизация"
             app:backgroundTint="#4CAF50"
             tools:layout_editor_absoluteX="180dp"
             tools:layout_editor_absoluteY="280dp" />

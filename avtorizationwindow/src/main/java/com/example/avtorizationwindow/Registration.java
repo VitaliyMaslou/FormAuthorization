@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -52,11 +53,13 @@ public class Registration extends AppCompatActivity {
         String[] array = {
                 log.getText().toString(),
                 pass.getText().toString(),
-                fname.getText().toString(),
-                sname.getText().toString(),
-                mname.getText().toString(),
                 phone.getText().toString(),
-                post.getText().toString()};
+                post.getText().toString(),
+                sname.getText().toString(),
+                fname.getText().toString(),
+                mname.getText().toString(),
+        };
+
 
         if(!CheckEmptyLines(array))
             return;
